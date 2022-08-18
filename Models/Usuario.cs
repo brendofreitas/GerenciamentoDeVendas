@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
 namespace GerenciamentoDeVendas.Models
@@ -22,5 +23,7 @@ namespace GerenciamentoDeVendas.Models
         public string Email { get; set; }
         [JsonIgnore]
         public Regiao RegiaoResponsavel { get; set; }
+        [JsonIgnore]
+        public List<Oportunidade> Oportunidades { get; set; }
     }
 }

@@ -11,5 +11,6 @@ namespace GerenciamentoDeVendas.Data
         }
 
        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Oportunidade> Oportunidades { get; set; }
     }
 }
